@@ -1,4 +1,4 @@
-Package: iotc.data.reference.datasets.SF
+Package: iotc.data.reference.datasets.SF.raw
 Type: Package
 Title: All official IOTC SF datasets
 Version: 2023.07.12
@@ -10,3 +10,4 @@ Encoding: UTF-8
 LazyData: true
 Depends: 
     R (>= 2.10)
+RoxygenNote: 7.2.3

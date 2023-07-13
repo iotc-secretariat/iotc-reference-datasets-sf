@@ -1,7 +1,7 @@
 #' The date at which the 'raw' size-frequency dataset was last updated
-"RAW.LAST_UPDATE"
+"LAST_UPDATE"
 
-#' The 'raw' monthly size-frequency dataset
+#' The 'raw' monthly size-frequency dataset for bigeye tuna
 #'
 #' @format
 #' \describe{
@@ -26,7 +26,7 @@
 #'   \item{IUCN_STATUS}{}
 #'   \item{SPECIES_WP_CODE}{}
 #'   \item{SPECIES_WP}{}
-#'   \item{SPECIES_GROUP_CODE{}
+#'   \item{SPECIES_GROUP_CODE}{}
 #'   \item{SPECIES_GROUP}{}
 #'   \item{SPECIES_CATEGORY_CODE}{}
 #'   \item{SPECIES_CATEGORY}{}
@@ -48,12 +48,9 @@
 #'   \item{RAISING}{}
 #'   \item{RAISE_CODE}{}
 #' }
-"RAW.ALL"
+"RAW.BET"
 
-#' The date at which the 'standardized' size-frequency dataset was last updated
-"STD.LAST_UPDATE"
-
-#' The 'standardized' monthly size-frequency dataset
+#' The 'raw' monthly size-frequency dataset for skipjack tuna
 #'
 #' @format
 #' \describe{
@@ -78,7 +75,7 @@
 #'   \item{IUCN_STATUS}{}
 #'   \item{SPECIES_WP_CODE}{}
 #'   \item{SPECIES_WP}{}
-#'   \item{SPECIES_GROUP_CODE{}
+#'   \item{SPECIES_GROUP_CODE}{}
 #'   \item{SPECIES_GROUP}{}
 #'   \item{SPECIES_CATEGORY_CODE}{}
 #'   \item{SPECIES_CATEGORY}{}
@@ -92,7 +89,7 @@
 #'   \item{IS_SSI}{}
 #'   \item{MEASURE_TYPE_CODE}{}
 #'   \item{MEASURE_TYPE}{}
-#'   \item{WEIGHT}{}
+#'   \item{MEASURE_UNIT_CODE}{}
 #'   \item{SEX_CODE}{}
 #'   \item{CLASS_LOW}{}
 #'   \item{CLASS_HIGH}{}
@@ -100,4 +97,445 @@
 #'   \item{RAISING}{}
 #'   \item{RAISE_CODE}{}
 #' }
-"STD.ALL"
+"RAW.SKJ"
+
+#' The 'raw' monthly size-frequency dataset for yellowfin tuna
+#'
+#' @format
+#' \describe{
+#'   \item{YEAR}{}
+#'   \item{QUARTER}{}
+#'   \item{MONTH_START}{}
+#'   \item{MONTH_END}{}
+#'   \item{FISHING_GROUND_CODE}{}
+#'   \item{FISHING_GROUND}{}
+#'   \item{FLEET_CODE}{}
+#'   \item{FLEET}{}
+#'   \item{FISHERY_TYPE_CODE}{}
+#'   \item{FISHERY_TYPE}{}
+#'   \item{FISHERY_GROUP_CODE}{}
+#'   \item{FISHERY_GROUP}{}
+#'   \item{FISHERY_CODE}{}
+#'   \item{FISHERY}{}
+#'   \item{GEAR_CODE}{}
+#'   \item{GEAR}{}
+#'   \item{SCHOOL_TYPE_CODE}{}
+#'   \item{IUCN_STATUS_CODE}{}
+#'   \item{IUCN_STATUS}{}
+#'   \item{SPECIES_WP_CODE}{}
+#'   \item{SPECIES_WP}{}
+#'   \item{SPECIES_GROUP_CODE}{}
+#'   \item{SPECIES_GROUP}{}
+#'   \item{SPECIES_CATEGORY_CODE}{}
+#'   \item{SPECIES_CATEGORY}{}
+#'   \item{SPECIES_CODE}{}
+#'   \item{SPECIES}{}
+#'   \item{SPECIES_SCIENTIFIC}{}
+#'   \item{SPECIES_FAMILY}{}
+#'   \item{SPECIES_ORDER}{}
+#'   \item{IS_IOTC_SPECIES}{}
+#'   \item{IS_SPECIES_AGGREGATE}{}
+#'   \item{IS_SSI}{}
+#'   \item{MEASURE_TYPE_CODE}{}
+#'   \item{MEASURE_TYPE}{}
+#'   \item{MEASURE_UNIT_CODE}{}
+#'   \item{SEX_CODE}{}
+#'   \item{CLASS_LOW}{}
+#'   \item{CLASS_HIGH}{}
+#'   \item{FISH_COUNT}{}
+#'   \item{RAISING}{}
+#'   \item{RAISE_CODE}{}
+#' }
+"RAW.YFT"
+
+#' The 'raw' monthly size-frequency dataset for temperate tunas
+#'
+#' @format
+#' \describe{
+#'   \item{YEAR}{}
+#'   \item{QUARTER}{}
+#'   \item{MONTH_START}{}
+#'   \item{MONTH_END}{}
+#'   \item{FISHING_GROUND_CODE}{}
+#'   \item{FISHING_GROUND}{}
+#'   \item{FLEET_CODE}{}
+#'   \item{FLEET}{}
+#'   \item{FISHERY_TYPE_CODE}{}
+#'   \item{FISHERY_TYPE}{}
+#'   \item{FISHERY_GROUP_CODE}{}
+#'   \item{FISHERY_GROUP}{}
+#'   \item{FISHERY_CODE}{}
+#'   \item{FISHERY}{}
+#'   \item{GEAR_CODE}{}
+#'   \item{GEAR}{}
+#'   \item{SCHOOL_TYPE_CODE}{}
+#'   \item{IUCN_STATUS_CODE}{}
+#'   \item{IUCN_STATUS}{}
+#'   \item{SPECIES_WP_CODE}{}
+#'   \item{SPECIES_WP}{}
+#'   \item{SPECIES_GROUP_CODE}{}
+#'   \item{SPECIES_GROUP}{}
+#'   \item{SPECIES_CATEGORY_CODE}{}
+#'   \item{SPECIES_CATEGORY}{}
+#'   \item{SPECIES_CODE}{}
+#'   \item{SPECIES}{}
+#'   \item{SPECIES_SCIENTIFIC}{}
+#'   \item{SPECIES_FAMILY}{}
+#'   \item{SPECIES_ORDER}{}
+#'   \item{IS_IOTC_SPECIES}{}
+#'   \item{IS_SPECIES_AGGREGATE}{}
+#'   \item{IS_SSI}{}
+#'   \item{MEASURE_TYPE_CODE}{}
+#'   \item{MEASURE_TYPE}{}
+#'   \item{MEASURE_UNIT_CODE}{}
+#'   \item{SEX_CODE}{}
+#'   \item{CLASS_LOW}{}
+#'   \item{CLASS_HIGH}{}
+#'   \item{FISH_COUNT}{}
+#'   \item{RAISING}{}
+#'   \item{RAISE_CODE}{}
+#' }
+"RAW.TEMP"
+
+#' The 'raw' monthly size-frequency dataset for billfish
+#'
+#' @format
+#' \describe{
+#'   \item{YEAR}{}
+#'   \item{QUARTER}{}
+#'   \item{MONTH_START}{}
+#'   \item{MONTH_END}{}
+#'   \item{FISHING_GROUND_CODE}{}
+#'   \item{FISHING_GROUND}{}
+#'   \item{FLEET_CODE}{}
+#'   \item{FLEET}{}
+#'   \item{FISHERY_TYPE_CODE}{}
+#'   \item{FISHERY_TYPE}{}
+#'   \item{FISHERY_GROUP_CODE}{}
+#'   \item{FISHERY_GROUP}{}
+#'   \item{FISHERY_CODE}{}
+#'   \item{FISHERY}{}
+#'   \item{GEAR_CODE}{}
+#'   \item{GEAR}{}
+#'   \item{SCHOOL_TYPE_CODE}{}
+#'   \item{IUCN_STATUS_CODE}{}
+#'   \item{IUCN_STATUS}{}
+#'   \item{SPECIES_WP_CODE}{}
+#'   \item{SPECIES_WP}{}
+#'   \item{SPECIES_GROUP_CODE}{}
+#'   \item{SPECIES_GROUP}{}
+#'   \item{SPECIES_CATEGORY_CODE}{}
+#'   \item{SPECIES_CATEGORY}{}
+#'   \item{SPECIES_CODE}{}
+#'   \item{SPECIES}{}
+#'   \item{SPECIES_SCIENTIFIC}{}
+#'   \item{SPECIES_FAMILY}{}
+#'   \item{SPECIES_ORDER}{}
+#'   \item{IS_IOTC_SPECIES}{}
+#'   \item{IS_SPECIES_AGGREGATE}{}
+#'   \item{IS_SSI}{}
+#'   \item{MEASURE_TYPE_CODE}{}
+#'   \item{MEASURE_TYPE}{}
+#'   \item{MEASURE_UNIT_CODE}{}
+#'   \item{SEX_CODE}{}
+#'   \item{CLASS_LOW}{}
+#'   \item{CLASS_HIGH}{}
+#'   \item{FISH_COUNT}{}
+#'   \item{RAISING}{}
+#'   \item{RAISE_CODE}{}
+#' }
+"RAW.BILL"
+
+#' The 'raw' monthly size-frequency dataset for neritic tunas
+#'
+#' @format
+#' \describe{
+#'   \item{YEAR}{}
+#'   \item{QUARTER}{}
+#'   \item{MONTH_START}{}
+#'   \item{MONTH_END}{}
+#'   \item{FISHING_GROUND_CODE}{}
+#'   \item{FISHING_GROUND}{}
+#'   \item{FLEET_CODE}{}
+#'   \item{FLEET}{}
+#'   \item{FISHERY_TYPE_CODE}{}
+#'   \item{FISHERY_TYPE}{}
+#'   \item{FISHERY_GROUP_CODE}{}
+#'   \item{FISHERY_GROUP}{}
+#'   \item{FISHERY_CODE}{}
+#'   \item{FISHERY}{}
+#'   \item{GEAR_CODE}{}
+#'   \item{GEAR}{}
+#'   \item{SCHOOL_TYPE_CODE}{}
+#'   \item{IUCN_STATUS_CODE}{}
+#'   \item{IUCN_STATUS}{}
+#'   \item{SPECIES_WP_CODE}{}
+#'   \item{SPECIES_WP}{}
+#'   \item{SPECIES_GROUP_CODE}{}
+#'   \item{SPECIES_GROUP}{}
+#'   \item{SPECIES_CATEGORY_CODE}{}
+#'   \item{SPECIES_CATEGORY}{}
+#'   \item{SPECIES_CODE}{}
+#'   \item{SPECIES}{}
+#'   \item{SPECIES_SCIENTIFIC}{}
+#'   \item{SPECIES_FAMILY}{}
+#'   \item{SPECIES_ORDER}{}
+#'   \item{IS_IOTC_SPECIES}{}
+#'   \item{IS_SPECIES_AGGREGATE}{}
+#'   \item{IS_SSI}{}
+#'   \item{MEASURE_TYPE_CODE}{}
+#'   \item{MEASURE_TYPE}{}
+#'   \item{MEASURE_UNIT_CODE}{}
+#'   \item{SEX_CODE}{}
+#'   \item{CLASS_LOW}{}
+#'   \item{CLASS_HIGH}{}
+#'   \item{FISH_COUNT}{}
+#'   \item{RAISING}{}
+#'   \item{RAISE_CODE}{}
+#' }
+"RAW.NERI"
+
+#' The 'raw' monthly size-frequency dataset for seerfish
+#'
+#' @format
+#' \describe{
+#'   \item{YEAR}{}
+#'   \item{QUARTER}{}
+#'   \item{MONTH_START}{}
+#'   \item{MONTH_END}{}
+#'   \item{FISHING_GROUND_CODE}{}
+#'   \item{FISHING_GROUND}{}
+#'   \item{FLEET_CODE}{}
+#'   \item{FLEET}{}
+#'   \item{FISHERY_TYPE_CODE}{}
+#'   \item{FISHERY_TYPE}{}
+#'   \item{FISHERY_GROUP_CODE}{}
+#'   \item{FISHERY_GROUP}{}
+#'   \item{FISHERY_CODE}{}
+#'   \item{FISHERY}{}
+#'   \item{GEAR_CODE}{}
+#'   \item{GEAR}{}
+#'   \item{SCHOOL_TYPE_CODE}{}
+#'   \item{IUCN_STATUS_CODE}{}
+#'   \item{IUCN_STATUS}{}
+#'   \item{SPECIES_WP_CODE}{}
+#'   \item{SPECIES_WP}{}
+#'   \item{SPECIES_GROUP_CODE}{}
+#'   \item{SPECIES_GROUP}{}
+#'   \item{SPECIES_CATEGORY_CODE}{}
+#'   \item{SPECIES_CATEGORY}{}
+#'   \item{SPECIES_CODE}{}
+#'   \item{SPECIES}{}
+#'   \item{SPECIES_SCIENTIFIC}{}
+#'   \item{SPECIES_FAMILY}{}
+#'   \item{SPECIES_ORDER}{}
+#'   \item{IS_IOTC_SPECIES}{}
+#'   \item{IS_SPECIES_AGGREGATE}{}
+#'   \item{IS_SSI}{}
+#'   \item{MEASURE_TYPE_CODE}{}
+#'   \item{MEASURE_TYPE}{}
+#'   \item{MEASURE_UNIT_CODE}{}
+#'   \item{SEX_CODE}{}
+#'   \item{CLASS_LOW}{}
+#'   \item{CLASS_HIGH}{}
+#'   \item{FISH_COUNT}{}
+#'   \item{RAISING}{}
+#'   \item{RAISE_CODE}{}
+#' }
+"RAW.SEER"
+
+#' The 'raw' monthly size-frequency dataset for tunas NEI
+#'
+#' @format
+#' \describe{
+#'   \item{YEAR}{}
+#'   \item{QUARTER}{}
+#'   \item{MONTH_START}{}
+#'   \item{MONTH_END}{}
+#'   \item{FISHING_GROUND_CODE}{}
+#'   \item{FISHING_GROUND}{}
+#'   \item{FLEET_CODE}{}
+#'   \item{FLEET}{}
+#'   \item{FISHERY_TYPE_CODE}{}
+#'   \item{FISHERY_TYPE}{}
+#'   \item{FISHERY_GROUP_CODE}{}
+#'   \item{FISHERY_GROUP}{}
+#'   \item{FISHERY_CODE}{}
+#'   \item{FISHERY}{}
+#'   \item{GEAR_CODE}{}
+#'   \item{GEAR}{}
+#'   \item{SCHOOL_TYPE_CODE}{}
+#'   \item{IUCN_STATUS_CODE}{}
+#'   \item{IUCN_STATUS}{}
+#'   \item{SPECIES_WP_CODE}{}
+#'   \item{SPECIES_WP}{}
+#'   \item{SPECIES_GROUP_CODE}{}
+#'   \item{SPECIES_GROUP}{}
+#'   \item{SPECIES_CATEGORY_CODE}{}
+#'   \item{SPECIES_CATEGORY}{}
+#'   \item{SPECIES_CODE}{}
+#'   \item{SPECIES}{}
+#'   \item{SPECIES_SCIENTIFIC}{}
+#'   \item{SPECIES_FAMILY}{}
+#'   \item{SPECIES_ORDER}{}
+#'   \item{IS_IOTC_SPECIES}{}
+#'   \item{IS_SPECIES_AGGREGATE}{}
+#'   \item{IS_SSI}{}
+#'   \item{MEASURE_TYPE_CODE}{}
+#'   \item{MEASURE_TYPE}{}
+#'   \item{MEASURE_UNIT_CODE}{}
+#'   \item{SEX_CODE}{}
+#'   \item{CLASS_LOW}{}
+#'   \item{CLASS_HIGH}{}
+#'   \item{FISH_COUNT}{}
+#'   \item{RAISING}{}
+#'   \item{RAISE_CODE}{}
+#' }
+"RAW.TNEI"
+
+#' The 'raw' monthly size-frequency dataset for sharks and rays
+#'
+#' @format
+#' \describe{
+#'   \item{YEAR}{}
+#'   \item{QUARTER}{}
+#'   \item{MONTH_START}{}
+#'   \item{MONTH_END}{}
+#'   \item{FISHING_GROUND_CODE}{}
+#'   \item{FISHING_GROUND}{}
+#'   \item{FLEET_CODE}{}
+#'   \item{FLEET}{}
+#'   \item{FISHERY_TYPE_CODE}{}
+#'   \item{FISHERY_TYPE}{}
+#'   \item{FISHERY_GROUP_CODE}{}
+#'   \item{FISHERY_GROUP}{}
+#'   \item{FISHERY_CODE}{}
+#'   \item{FISHERY}{}
+#'   \item{GEAR_CODE}{}
+#'   \item{GEAR}{}
+#'   \item{SCHOOL_TYPE_CODE}{}
+#'   \item{IUCN_STATUS_CODE}{}
+#'   \item{IUCN_STATUS}{}
+#'   \item{SPECIES_WP_CODE}{}
+#'   \item{SPECIES_WP}{}
+#'   \item{SPECIES_GROUP_CODE}{}
+#'   \item{SPECIES_GROUP}{}
+#'   \item{SPECIES_CATEGORY_CODE}{}
+#'   \item{SPECIES_CATEGORY}{}
+#'   \item{SPECIES_CODE}{}
+#'   \item{SPECIES}{}
+#'   \item{SPECIES_SCIENTIFIC}{}
+#'   \item{SPECIES_FAMILY}{}
+#'   \item{SPECIES_ORDER}{}
+#'   \item{IS_IOTC_SPECIES}{}
+#'   \item{IS_SPECIES_AGGREGATE}{}
+#'   \item{IS_SSI}{}
+#'   \item{MEASURE_TYPE_CODE}{}
+#'   \item{MEASURE_TYPE}{}
+#'   \item{MEASURE_UNIT_CODE}{}
+#'   \item{SEX_CODE}{}
+#'   \item{CLASS_LOW}{}
+#'   \item{CLASS_HIGH}{}
+#'   \item{FISH_COUNT}{}
+#'   \item{RAISING}{}
+#'   \item{RAISE_CODE}{}
+#' }
+"RAW.SHRK"
+
+#' The 'raw' monthly size-frequency dataset for other species
+#'
+#' @format
+#' \describe{
+#'   \item{YEAR}{}
+#'   \item{QUARTER}{}
+#'   \item{MONTH_START}{}
+#'   \item{MONTH_END}{}
+#'   \item{FISHING_GROUND_CODE}{}
+#'   \item{FISHING_GROUND}{}
+#'   \item{FLEET_CODE}{}
+#'   \item{FLEET}{}
+#'   \item{FISHERY_TYPE_CODE}{}
+#'   \item{FISHERY_TYPE}{}
+#'   \item{FISHERY_GROUP_CODE}{}
+#'   \item{FISHERY_GROUP}{}
+#'   \item{FISHERY_CODE}{}
+#'   \item{FISHERY}{}
+#'   \item{GEAR_CODE}{}
+#'   \item{GEAR}{}
+#'   \item{SCHOOL_TYPE_CODE}{}
+#'   \item{IUCN_STATUS_CODE}{}
+#'   \item{IUCN_STATUS}{}
+#'   \item{SPECIES_WP_CODE}{}
+#'   \item{SPECIES_WP}{}
+#'   \item{SPECIES_GROUP_CODE}{}
+#'   \item{SPECIES_GROUP}{}
+#'   \item{SPECIES_CATEGORY_CODE}{}
+#'   \item{SPECIES_CATEGORY}{}
+#'   \item{SPECIES_CODE}{}
+#'   \item{SPECIES}{}
+#'   \item{SPECIES_SCIENTIFIC}{}
+#'   \item{SPECIES_FAMILY}{}
+#'   \item{SPECIES_ORDER}{}
+#'   \item{IS_IOTC_SPECIES}{}
+#'   \item{IS_SPECIES_AGGREGATE}{}
+#'   \item{IS_SSI}{}
+#'   \item{MEASURE_TYPE_CODE}{}
+#'   \item{MEASURE_TYPE}{}
+#'   \item{MEASURE_UNIT_CODE}{}
+#'   \item{SEX_CODE}{}
+#'   \item{CLASS_LOW}{}
+#'   \item{CLASS_HIGH}{}
+#'   \item{FISH_COUNT}{}
+#'   \item{RAISING}{}
+#'   \item{RAISE_CODE}{}
+#' }
+"RAW.OTHR"
+
+#' The 'raw' monthly size-frequency dataset for ETP species
+#'
+#' @format
+#' \describe{
+#'   \item{YEAR}{}
+#'   \item{QUARTER}{}
+#'   \item{MONTH_START}{}
+#'   \item{MONTH_END}{}
+#'   \item{FISHING_GROUND_CODE}{}
+#'   \item{FISHING_GROUND}{}
+#'   \item{FLEET_CODE}{}
+#'   \item{FLEET}{}
+#'   \item{FISHERY_TYPE_CODE}{}
+#'   \item{FISHERY_TYPE}{}
+#'   \item{FISHERY_GROUP_CODE}{}
+#'   \item{FISHERY_GROUP}{}
+#'   \item{FISHERY_CODE}{}
+#'   \item{FISHERY}{}
+#'   \item{GEAR_CODE}{}
+#'   \item{GEAR}{}
+#'   \item{SCHOOL_TYPE_CODE}{}
+#'   \item{IUCN_STATUS_CODE}{}
+#'   \item{IUCN_STATUS}{}
+#'   \item{SPECIES_WP_CODE}{}
+#'   \item{SPECIES_WP}{}
+#'   \item{SPECIES_GROUP_CODE}{}
+#'   \item{SPECIES_GROUP}{}
+#'   \item{SPECIES_CATEGORY_CODE}{}
+#'   \item{SPECIES_CATEGORY}{}
+#'   \item{SPECIES_CODE}{}
+#'   \item{SPECIES}{}
+#'   \item{SPECIES_SCIENTIFIC}{}
+#'   \item{SPECIES_FAMILY}{}
+#'   \item{SPECIES_ORDER}{}
+#'   \item{IS_IOTC_SPECIES}{}
+#'   \item{IS_SPECIES_AGGREGATE}{}
+#'   \item{IS_SSI}{}
+#'   \item{MEASURE_TYPE_CODE}{}
+#'   \item{MEASURE_TYPE}{}
+#'   \item{MEASURE_UNIT_CODE}{}
+#'   \item{SEX_CODE}{}
+#'   \item{CLASS_LOW}{}
+#'   \item{CLASS_HIGH}{}
+#'   \item{FISH_COUNT}{}
+#'   \item{RAISING}{}
+#'   \item{RAISE_CODE}{}
+#' }
+"RAW.ETPS"
