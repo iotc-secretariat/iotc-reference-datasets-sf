@@ -1,4 +1,7 @@
-#' The 'raw' monthly effort dataset
+#' The date at which the 'raw' size-frequency dataset was last updated
+"RAW.LAST_UPDATE"
+
+#' The 'raw' monthly size-frequency dataset
 #'
 #' @format
 #' \describe{
@@ -19,12 +22,38 @@
 #'   \item{GEAR_CODE}{}
 #'   \item{GEAR}{}
 #'   \item{SCHOOL_TYPE_CODE}{}
-#'   \item{EFFORT}{}
-#'   \item{EFFORT_UNIT_CODE}{}
+#'   \item{IUCN_STATUS_CODE}{}
+#'   \item{IUCN_STATUS}{}
+#'   \item{SPECIES_WP_CODE}{}
+#'   \item{SPECIES_WP}{}
+#'   \item{SPECIES_GROUP_CODE{}
+#'   \item{SPECIES_GROUP}{}
+#'   \item{SPECIES_CATEGORY_CODE}{}
+#'   \item{SPECIES_CATEGORY}{}
+#'   \item{SPECIES_CODE}{}
+#'   \item{SPECIES}{}
+#'   \item{SPECIES_SCIENTIFIC}{}
+#'   \item{SPECIES_FAMILY}{}
+#'   \item{SPECIES_ORDER}{}
+#'   \item{IS_IOTC_SPECIES}{}
+#'   \item{IS_SPECIES_AGGREGATE}{}
+#'   \item{IS_SSI}{}
+#'   \item{MEASURE_TYPE_CODE}{}
+#'   \item{MEASURE_TYPE}{}
+#'   \item{MEASURE_UNIT_CODE}{}
+#'   \item{SEX_CODE}{}
+#'   \item{CLASS_LOW}{}
+#'   \item{CLASS_HIGH}{}
+#'   \item{FISH_COUNT}{}
+#'   \item{RAISING}{}
+#'   \item{RAISE_CODE}{}
 #' }
-"EF_RAW"
+"RAW.ALL"
 
-#' The 'raw' monthly catch dataset
+#' The date at which the 'standardized' size-frequency dataset was last updated
+"STD.LAST_UPDATE"
+
+#' The 'standardized' monthly size-frequency dataset
 #'
 #' @format
 #' \describe{
@@ -44,7 +73,7 @@
 #'   \item{FISHERY}{}
 #'   \item{GEAR_CODE}{}
 #'   \item{GEAR}{}
-#'   \item{CATCH_SCHOOL_TYPE_CODE}{}
+#'   \item{SCHOOL_TYPE_CODE}{}
 #'   \item{IUCN_STATUS_CODE}{}
 #'   \item{IUCN_STATUS}{}
 #'   \item{SPECIES_WP_CODE}{}
@@ -61,64 +90,14 @@
 #'   \item{IS_IOTC_SPECIES}{}
 #'   \item{IS_SPECIES_AGGREGATE}{}
 #'   \item{IS_SSI}{}
-#'   \item{CATCH}{}
-#'   \item{CATCH_UNIT_CODE}{}
-#'   \item{FATE_TYPE_CODE}{}
-#'   \item{FATE_TYPE}{}
-#'   \item{FATE_CODE}{}
-#'   \item{FATE}{}
+#'   \item{MEASURE_TYPE_CODE}{}
+#'   \item{MEASURE_TYPE}{}
+#'   \item{WEIGHT}{}
+#'   \item{SEX_CODE}{}
+#'   \item{CLASS_LOW}{}
+#'   \item{CLASS_HIGH}{}
+#'   \item{FISH_COUNT}{}
 #'   \item{RAISING}{}
 #'   \item{RAISE_CODE}{}
 #' }
-"CA_RAW"
-
-#' The 'raw' monthly catch and effort dataset
-#'
-#' @format
-#' \describe{
-#'   \item{YEAR}{}
-#'   \item{QUARTER}{}
-#'   \item{MONTH_START}{}
-#'   \item{MONTH_END}{}
-#'   \item{FISHING_GROUND_CODE}{}
-#'   \item{FISHING_GROUND}{}
-#'   \item{FLEET_CODE}{}
-#'   \item{FLEET}{}
-#'   \item{FISHERY_TYPE_CODE}{}
-#'   \item{FISHERY_TYPE}{}
-#'   \item{FISHERY_GROUP_CODE}{}
-#'   \item{FISHERY_GROUP}{}
-#'   \item{FISHERY_CODE}{}
-#'   \item{FISHERY}{}
-#'   \item{GEAR_CODE}{}
-#'   \item{GEAR}{}
-#'   \item{EFFORT_SCHOOL_TYPE_CODE}{}
-#'   \item{CATCH_SCHOOL_TYPE_CODE}{}
-#'   \item{EFFORT}{}
-#'   \item{EFFORT_UNIT_CODE}{}
-#'   \item{IUCN_STATUS_CODE}{}
-#'   \item{IUCN_STATUS}{}
-#'   \item{SPECIES_WP_CODE}{}
-#'   \item{SPECIES_WP}{}
-#'   \item{SPECIES_GROUP_CODE{}
-#'   \item{SPECIES_GROUP}{}
-#'   \item{SPECIES_CATEGORY_CODE}{}
-#'   \item{SPECIES_CATEGORY}{}
-#'   \item{SPECIES_CODE}{}
-#'   \item{SPECIES}{}
-#'   \item{SPECIES_SCIENTIFIC}{}
-#'   \item{SPECIES_FAMILY}{}
-#'   \item{SPECIES_ORDER}{}
-#'   \item{IS_IOTC_SPECIES}{}
-#'   \item{IS_SPECIES_AGGREGATE}{}
-#'   \item{IS_SSI}{}
-#'   \item{CATCH}{}
-#'   \item{CATCH_UNIT_CODE}{}
-#'   \item{FATE_TYPE_CODE}{}
-#'   \item{FATE_TYPE}{}
-#'   \item{FATE_CODE}{}
-#'   \item{FATE}{}
-#'   \item{RAISING}{}
-#'   \item{RAISE_CODE}{}
-#' }
-"CE_RAW"
+"STD.ALL"

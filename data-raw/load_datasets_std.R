@@ -1,5 +1,9 @@
 library(iotc.base.common.data)
 library(iotc.base.common.std)
+library(lubridate)
+
+STD.LAST_UPDATE = today(tzone = "UTC")
+usethis::use_data(STD.LAST_UPDATE, overwrite = TRUE)
 
 SPECIES_CFG =
   query(
@@ -51,27 +55,27 @@ standardize = function(sf_data) {
   return(STANDARDIZED_SF)
 }
 
-SF_STD_ALL = standardize(SF_RAW_ALL)
-usethis::use_data(SF_STD_ALL, overwrite = TRUE)
+STD.ALL = decorate(standardize(RAW.ALL), factorize = FALSE)
+usethis::use_data(STD.ALL, overwrite = TRUE)
 
-SF_STD_TEMP = SF_STD_ALL[SPECIES_CATEGORY_CODE ==     "TEMPERATE"]
-SF_STD_TROP = SF_STD_ALL[SPECIES_CATEGORY_CODE ==     "TROPICAL"]
-SF_STD_BILL = SF_STD_ALL[SPECIES_CATEGORY_CODE ==     "BILLFISH"]
-SF_STD_NERI = SF_STD_ALL[SPECIES_CATEGORY_CODE ==     "NERITIC"]
-SF_STD_SEER = SF_STD_ALL[SPECIES_CATEGORY_CODE ==     "SEERFISH"]
-SF_STD_TNEI = SF_STD_ALL[SPECIES_CATEGORY_CODE ==     "TUNAS_NEI"]
-SF_STD_SHRK = SF_STD_ALL[SPECIES_CATEGORY_CODE %in% c("SHARKS", "RAYS")]
-SF_STD_OTHR = SF_STD_ALL[SPECIES_CATEGORY_CODE ==     "OTHERS"]
-SF_STD_ETPS = SF_STD_ALL[SPECIES_CATEGORY_CODE %in% c("CETACEANS", "SEABIRDS", "TURTLES")]
+STD.TEMP = STD.ALL[SPECIES_CATEGORY_CODE ==     "TEMPERATE"]
+STD.TROP = STD.ALL[SPECIES_CATEGORY_CODE ==     "TROPICAL"]
+STD.BILL = STD.ALL[SPECIES_CATEGORY_CODE ==     "BILLFISH"]
+STD.NERI = STD.ALL[SPECIES_CATEGORY_CODE ==     "NERITIC"]
+STD.SEER = STD.ALL[SPECIES_CATEGORY_CODE ==     "SEERFISH"]
+STD.TNEI = STD.ALL[SPECIES_CATEGORY_CODE ==     "TUNAS_NEI"]
+STD.SHRK = STD.ALL[SPECIES_CATEGORY_CODE %in% c("SHARKS", "RAYS")]
+STD.OTHR = STD.ALL[SPECIES_CATEGORY_CODE ==     "OTHERS"]
+STD.ETPS = STD.ALL[SPECIES_CATEGORY_CODE %in% c("CETACEANS", "SEABIRDS", "TURTLES")]
 
 if(FALSE) {
-  usethis::use_data(SF_STD_TEMP, overwrite = TRUE)
-  usethis::use_data(SF_STD_TROP, overwrite = TRUE)
-  usethis::use_data(SF_STD_BILL, overwrite = TRUE)
-  usethis::use_data(SF_STD_NERI, overwrite = TRUE)
-  usethis::use_data(SF_STD_SEER, overwrite = TRUE)
-  usethis::use_data(SF_STD_TNEI, overwrite = TRUE)
-  usethis::use_data(SF_STD_SHRK, overwrite = TRUE)
-  usethis::use_data(SF_STD_OTHR, overwrite = TRUE)
-  usethis::use_data(SF_STD_ETPS, overwrite = TRUE)
+  usethis::use_data(STD.TEMP, overwrite = TRUE)
+  usethis::use_data(STD.TROP, overwrite = TRUE)
+  usethis::use_data(STD.BILL, overwrite = TRUE)
+  usethis::use_data(STD.NERI, overwrite = TRUE)
+  usethis::use_data(STD.SEER, overwrite = TRUE)
+  usethis::use_data(STD.TNEI, overwrite = TRUE)
+  usethis::use_data(STD.SHRK, overwrite = TRUE)
+  usethis::use_data(STD.OTHR, overwrite = TRUE)
+  usethis::use_data(STD.ETPS, overwrite = TRUE)
 }
