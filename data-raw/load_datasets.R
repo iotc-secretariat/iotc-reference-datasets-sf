@@ -31,7 +31,7 @@ usethis::use_data(RAW.ETPS, overwrite = TRUE, compress = "gzip")
 RAW.OTHR = SF.raw(species_category_codes = c("OTHERS"))
 usethis::use_data(RAW.OTHR, overwrite = TRUE, compress = "gzip")
 
-BITBUCKET_REPO_URL = paste0("https://api.bitbucket.org/2.0/repositories/iotc-ws/iotc-reference-datasets-SF/downloads")
+BITBUCKET_REPO_URL = paste0("https://api.bitbucket.org/2.0/repositories/iotc-ws/iotc-reference-datasets-sf/downloads")
 
 for(file in list.files("../data", pattern = "*.rda")) {
   log_info(paste0("Uploading '", file, "' to BitBucket repository under ", BITBUCKET_REPO_URL))
