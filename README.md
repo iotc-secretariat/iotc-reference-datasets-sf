@@ -13,7 +13,7 @@ Simply run the `load_datasets.R` script included under the `data-raw` folder.
 The script will take care of:
 
 a.  loading all current raw size-frequency data using the IOTC data libraries
-b.  creating distinct *subsets* of the size-frequency records by species (for tropical tuna) or by species group
+b.  creating distinct *subsets* of the size-frequency records, one for each species group
 c.  producing a distinct `.rda` R data file for each subset of the original information, eventually stored under the `data` folder of the project
 
 ## How to build the package
