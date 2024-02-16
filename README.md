@@ -12,9 +12,10 @@ Simply run the `load_datasets.R` script included under the `data-raw` folder.
 
 The script will take care of:
 
-a.  loading all current raw size-frequency data using the IOTC data libraries
-b.  creating distinct *subsets* of the size-frequency records, one for each species group
-c.  producing a distinct `.rda` R data file for each subset of the original information, eventually stored under the `data` folder of the project
+- loading all current raw size-frequency data using the IOTC data libraries
+- creating distinct *subsets* of the size-frequency records, one for each species group
+- producing a distinct `.rda` R data file for each subset of the original information, eventually stored under the `data` folder of the project
+- uploading the `.rda` files onto the [_Downloads_ section](https://bitbucket.org/iotc-ws/iotc-reference-datasets-sf-std/downloads/) of the BitBucket repository
 
 ## How to build the package
 
