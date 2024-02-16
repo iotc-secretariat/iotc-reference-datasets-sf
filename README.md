@@ -41,20 +41,20 @@ or select `Build` / `Install package` from within R studio
 
 ### Datasets
 
-1.  `SF.RAW.TEMP` - raw size-frequency data for temperate tunas (**albacore** and **southern bluefin tuna**)
-2.  `SF.RAW.TROP` - raw size-frequency data for tropical tunas (**bigeye tuna**, **skipjack tuna**, and **yellowfin tuna**)
-3.  `SF.RAW.BILL` - raw size-frequency data for billfish species (**black marlin**, **blue marlin**, **striped marlin**, **Indo-pacific sailfish**, and **swordfish**)
-4.  `SF.RAW.NERI` - raw size-frequency data for neritic tunas (**bullet tuna**, **frigate tuna**, **kawakawa**, and **longtail tuna**)
-5.  `SF.RAW.SEER` - raw size-frequency data for seerfish species (**Indo-pacific king mackerel** and **narrow-barred Spanish mackerel**)
-6.  `SF.RAW.TNEI` - raw size-frequency data for other **tunas NEI** species
-7.  `SF.RAW.SHRK` - raw size-frequency data for **sharks**, **rays**, and **mobulid** species
-8.  `SF.RAW.ETPS` - raw size-frequency data for ETP species (**marine turtles**, **cetaceans**, **seabirds**)
-9.  `SF.RAW.OTHR` - raw size-frequency data for **all other species**
+1.  `RAW.TEMP` - raw size-frequency data for temperate tunas (**albacore** and **southern bluefin tuna**)
+2.  `RAW.TROP` - raw size-frequency data for tropical tunas (**bigeye tuna**, **skipjack tuna**, and **yellowfin tuna**)
+3.  `RAW.BILL` - raw size-frequency data for billfish species (**black marlin**, **blue marlin**, **striped marlin**, **Indo-pacific sailfish**, and **swordfish**)
+4.  `RAW.NERI` - raw size-frequency data for neritic tunas (**bullet tuna**, **frigate tuna**, **kawakawa**, and **longtail tuna**)
+5.  `RAW.SEER` - raw size-frequency data for seerfish species (**Indo-pacific king mackerel** and **narrow-barred Spanish mackerel**)
+6.  `RAW.TNEI` - raw size-frequency data for other **tunas NEI** species
+7.  `RAW.SHRK` - raw size-frequency data for **sharks**, **rays**, and **mobulid** species
+8.  `RAW.ETPS` - raw size-frequency data for ETP species (**marine turtles**, **cetaceans**, **seabirds**)
+9.  `RAW.OTHR` - raw size-frequency data for **all other species**
 10. `LAST_UPDATE` - the date of last update / production of the datasets
 
 ### Functions
 
-1.  `SF.RAW.all()` - to return a collation of all `SF.RAW.*` datasets above
+1.  `RAW.all()` - to return a collation of all `RAW.*` datasets above
 
 ## Structure of the datasets
 

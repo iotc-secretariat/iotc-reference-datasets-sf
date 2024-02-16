@@ -1,17 +1,17 @@
 #' Returns a dataset containing raw size-frequency data for all categories of species
 #' @export
-SF.RAW.all = function() {
+RAW.all = function() {
   return(
     rbind(
-      SF.RAW.TEMP,
-      SF.RAW.TROP,
-      SF.RAW.BILL,
-      SF.RAW.NERI,
-      SF.RAW.SEER,
-      SF.RAW.TNEI,
-      SF.RAW.SHRK,
-      SF.RAW.ETPS,
-      SF.RAW.OTHR
+      RAW.TEMP,
+      RAW.TROP,
+      RAW.BILL,
+      RAW.NERI,
+      RAW.SEER,
+      RAW.TNEI,
+      RAW.SHRK,
+      RAW.ETPS,
+      RAW.OTHR
     )
   )
 }

@@ -48,7 +48,7 @@
 #'   \item{RAISING}{}
 #'   \item{RAISE_CODE}{}
 #' }
-"SF.RAW.TEMP"
+"RAW.TEMP"
 
 #' The 'raw' monthly size-frequency dataset for tropical tunas
 #'
@@ -97,7 +97,7 @@
 #'   \item{RAISING}{}
 #'   \item{RAISE_CODE}{}
 #' }
-"SF.RAW.TROP"
+"RAW.TROP"
 
 #' The 'raw' monthly size-frequency dataset for billfish
 #'
@@ -146,7 +146,7 @@
 #'   \item{RAISING}{}
 #'   \item{RAISE_CODE}{}
 #' }
-"SF.RAW.BILL"
+"RAW.BILL"
 
 #' The 'raw' monthly size-frequency dataset for neritic tunas
 #'
@@ -195,7 +195,7 @@
 #'   \item{RAISING}{}
 #'   \item{RAISE_CODE}{}
 #' }
-"SF.RAW.NERI"
+"RAW.NERI"
 
 #' The 'raw' monthly size-frequency dataset for seerfish
 #'
@@ -244,7 +244,7 @@
 #'   \item{RAISING}{}
 #'   \item{RAISE_CODE}{}
 #' }
-"SF.RAW.SEER"
+"RAW.SEER"
 
 #' The 'raw' monthly size-frequency dataset for tunas NEI
 #'
@@ -293,7 +293,7 @@
 #'   \item{RAISING}{}
 #'   \item{RAISE_CODE}{}
 #' }
-"SF.RAW.TNEI"
+"RAW.TNEI"
 
 #' The 'raw' monthly size-frequency dataset for sharks, rays, and mobulids
 #'
@@ -342,7 +342,7 @@
 #'   \item{RAISING}{}
 #'   \item{RAISE_CODE}{}
 #' }
-"SF.RAW.SHRK"
+"RAW.SHRK"
 
 #' The 'raw' monthly size-frequency dataset for ETP species
 #'
@@ -391,7 +391,7 @@
 #'   \item{RAISING}{}
 #'   \item{RAISE_CODE}{}
 #' }
-"SF.RAW.ETPS"
+"RAW.ETPS"
 
 #' The 'raw' monthly size-frequency dataset for other species
 #'
@@ -440,4 +440,4 @@
 #'   \item{RAISING}{}
 #'   \item{RAISE_CODE}{}
 #' }
-"SF.RAW.OTHR"
+"RAW.OTHR"
