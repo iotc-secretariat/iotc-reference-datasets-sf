@@ -27,6 +27,14 @@ devtools::build()
 
 or select `Build` / `Build source package` from within R studio
 
+At the end of the installation, the script uploads the artifacts (i.e., the R data files) onto the [Download](https://bitbucket.org/iotc-ws/iotc-reference-datasets-sf/downloads/) section of the BitBucket repository.
+
+For this to work, it is necessary to configure in advance the `BITBUCKET_UPLOAD_SF_DATASET_TOKEN` as an environment variable that should be assigned an access token created for the specific repository (with the `repository:write` OAuth 2.0 scope).
+
+The creation of the token is generally [performed by the repository administrators](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/) and the tokens, once created, shall be stored securely as they won't be accessible again after the creation.
+
+See also the specific section of the [BitBucket cloud REST API](https://developer.atlassian.com/cloud/bitbucket/rest/api-group-downloads/#api-repositories-workspace-repo-slug-downloads-post).
+
 ## How to install the package
 
 Build the package first, then from a command shell run:
