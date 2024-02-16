@@ -37,7 +37,7 @@ for(file in list.files("../data", pattern = "*.rda")) {
   log_info(paste0("Uploading '", file, "' to BitBucket repository under ", BITBUCKET_REPO_URL))
 
   upload_response =
-    POST(destination_URL,
+    POST(BITBUCKET_REPO_URL,
          body = list(files = upload_file(paste0("../data/", file))),
          add_headers(
             Authorization = paste0("Bearer ", Sys.getenv("BITBUCKET_UPLOAD_SF_DATASET_TOKEN"))
