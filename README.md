@@ -46,8 +46,13 @@ or select `Build` / `Install package` from within R studio
 
 ### Datasets
 
-1.  `RAW.TEMP` - raw size-frequency data for temperate tunas (**albacore** and **southern bluefin tuna**)
-2.  `RAW.TROP` - raw size-frequency data for tropical tunas (**bigeye tuna**, **skipjack tuna**, and **yellowfin tuna**)
+1.  `RAW.TROP` - raw size-frequency data for tropical tunas (**bigeye tuna**, **skipjack tuna**, and **yellowfin tuna**), and also
+
+-   1.a. `RAW.TROP.BET` - raw size-frequency data for bigeye tuna only (same data as in `RAW.TROP`)
+-   1.b. `RAW.TROP.SKJ` - raw size-frequency data for skipjack tuna only (same data as in `RAW.TROP`)
+-   1.c. `RAW.TROP.YFT` - raw size-frequency data for yellowfin tuna only (same data as in `RAW.TROP`)
+
+2.  `RAW.TEMP` - raw size-frequency data for temperate tunas (**albacore** and **southern bluefin tuna**)
 3.  `RAW.BILL` - raw size-frequency data for billfish species (**black marlin**, **blue marlin**, **striped marlin**, **Indo-pacific sailfish**, and **swordfish**)
 4.  `RAW.NERI` - raw size-frequency data for neritic tunas (**bullet tuna**, **frigate tuna**, **kawakawa**, and **longtail tuna**)
 5.  `RAW.SEER` - raw size-frequency data for seerfish species (**Indo-pacific king mackerel** and **narrow-barred Spanish mackerel**)

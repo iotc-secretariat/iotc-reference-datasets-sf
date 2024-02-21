@@ -3,6 +3,15 @@ library(iotc.base.common.data)
 RAW.TROP = SF.raw(species_category_codes = "TROPICAL")
 usethis::use_data(RAW.TROP, overwrite = TRUE, compress = "gzip")
 
+RAW.TROP.BET = RAW.TROP[SPECIES_CODE == "BET"]
+usethis::use_data(RAW.TROP.BET, overwrite = TRUE, compress = "gzip")
+
+RAW.TROP.SKJ = RAW.TROP[SPECIES_CODE == "SKJ"]
+usethis::use_data(RAW.TROP.SKJ, overwrite = TRUE, compress = "gzip")
+
+RAW.TROP.YFT = RAW.TROP[SPECIES_CODE == "YFT"]
+usethis::use_data(RAW.TROP.YFT, overwrite = TRUE, compress = "gzip")
+
 RAW.TEMP = SF.raw(species_category_codes = "TEMPERATE")
 usethis::use_data(RAW.TEMP, overwrite = TRUE, compress = "gzip")
 

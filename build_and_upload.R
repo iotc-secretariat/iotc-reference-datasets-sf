@@ -1,6 +1,8 @@
 library(httr)
 library(iotc.core.utils.misc)
 
+source("./data-raw/load_datasets.R")
+
 TOKEN = Sys.getenv("BITBUCKET_UPLOAD_SF_DATASET_TOKEN")
 
 if(TOKEN == "") {
@@ -25,7 +27,7 @@ if(TOKEN == "") {
            )
       )
 
-    log_info(paste0("Upload response: [", status_code(response), "] / ", content(upload_response)))
+    log_info(paste0("Upload response: [", status_code(upload_response), "] / ", content(upload_response)))
   }
 
   unlink(paste0("./out/", list.files("./out", pattern = "*.tar.gz")))
