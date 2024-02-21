@@ -74,6 +74,6 @@ if(TOKEN == "") {
            )
       )
 
-    log_info(paste0("Upload response: [", status_code, "] / ", content(upload_response)))
+    log_info(paste0("Upload response: [", status_code(response), "] / ", content(upload_response)))
   }
 }
