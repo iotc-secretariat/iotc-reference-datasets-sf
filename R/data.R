@@ -1,5 +1,6 @@
-#' The date at which the 'raw' size-frequency dataset was last updated
-"LAST_UPDATE"
+#' A list of metadata fields describing the various datasets.
+#' These include the number of rows for each dataset and their date of last update
+"METADATA"
 
 #' The 'raw' monthly size-frequency dataset for temperate tunas
 #'
