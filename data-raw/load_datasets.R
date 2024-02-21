@@ -57,7 +57,7 @@ if(TOKEN == "") {
 } else {
   BITBUCKET_REPO_URL = "https://api.bitbucket.org/2.0/repositories/iotc-ws/iotc-reference-datasets-sf/downloads"
 
-  FILES = list.files("../data", pattern = "*.rdaz")
+  FILES = list.files("../data", pattern = "*.rda")
 
   if(length(FILES) == 0) {
     stop("No .RDA files found: check that these have been produced and that you are running this script from the right directory (its container folder)")
@@ -74,6 +74,6 @@ if(TOKEN == "") {
            )
       )
 
-    log_info(paste0("Upload response: ", upload_response))
+    log_info(paste0("Upload response: [", status_code, "] / ", content(upload_response)))
   }
 }
