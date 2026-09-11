@@ -47,8 +47,8 @@ RAW.ALL = data.table::rbindlist(list(
 	RAW.ETPS,
 	RAW.OTHR
 ),use.names = TRUE, fill = TRUE)
-RAW.ALL = RAW.ALL[, c("SPECIES_SCIENTIFIC", "SPECIES_FAMILY", "SPECIES_ORDER", "IS_IOTC_SPECIES", "IS_SPECIES_AGGREGATE", "IS_SSI") := NULL]
-usethis::use_data(RAW.ALL, overwrite = TRUE, compress = "gzip")
+RAW.ALL_AGG = RAW.ALL[, .(FISH_COUNT = sum(FISH_COUNT)), keyby = setdiff(names(RAW.ALL), c("MONTH_START", "MONTH_END", "FISH_COUNT"))]
+usethis::use_data(RAW.ALL_AGG, overwrite = TRUE, compress = "gzip")
 
 LAST_UPDATE = Sys.Date()
 
