@@ -36,23 +36,25 @@ usethis::use_data(RAW.ETPS, overwrite = TRUE, compress = "gzip")
 RAW.OTHR = SF.raw(species_category_codes = c("OTHERS"))
 usethis::use_data(RAW.OTHR, overwrite = TRUE, compress = "gzip")
 
+RAW.ALL = data.table::rbindlist(list(
+	RAW.TROP,
+	RAW.TEMP,
+	RAW.BILL,
+	RAW.NERI,
+	RAW.SEER,
+	RAW.TNEI,
+	RAW.SHRK,
+	RAW.ETPS,
+	RAW.OTHR
+),use.names = TRUE, fill = TRUE)
+RAW.ALL = RAW.ALL[, c("SPECIES_SCIENTIFIC", "SPECIES_FAMILY", "SPECIES_ORDER", "IS_IOTC_SPECIES", "IS_SPECIES_AGGREGATE", "IS_SSI") := NULL]
+usethis::use_data(RAW.ALL, overwrite = TRUE, compress = "gzip")
+
 LAST_UPDATE = Sys.Date()
 
 METADATA = list(
   RAW.SF = list(
-    DATA = nrow(
-      rbind(
-        RAW.TROP,
-        RAW.TEMP,
-        RAW.BILL,
-        RAW.NERI,
-        RAW.SEER,
-        RAW.TNEI,
-        RAW.SHRK,
-        RAW.ETPS,
-        RAW.OTHR
-      )
-    ),
+    DATA = nrow(RAW.ALL),
     LAST_UPDATE = LAST_UPDATE
   )
 )
